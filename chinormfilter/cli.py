@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser(
     description="Filter synonym files written in lucene format to avoid duplication with Sudachi normalization"
 )
 
+parser.add_argument("file", help="lucene synonym file path")
 parser.add_argument("-o", "--out", help="output path")
 parser.add_argument(
     "-r", "--sudachi_setting", help="the setting file in JSON format"

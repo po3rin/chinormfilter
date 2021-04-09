@@ -4,6 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 
+[tool.poetry.scripts]
+chinormfilter = "chinormfilter.cli:cli"
+
 [tool.poetry.dependencies]
 python = "^3.7"
 sudachipy = "^0.5.2"
