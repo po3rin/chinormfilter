@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "chinormfilter"
-version = "0.4.0"
+version = "0.5.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["po3rin <abctail30@gmail.com>"]
+repository = "http://github.com/po3rin/chinormfilter"
+homepage = "http://github.com/po3rin/chinormfilter"
+readme = "README.md"
+license = "Apache-2.0"
 
 [tool.poetry.scripts]
 chinormfilter = "chinormfilter.cli:cli"
