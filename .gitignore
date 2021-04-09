@@ -1,3 +1,5 @@
 .venv/
 .pytest_cache/
 chinormfilter/__pycache__/
+tests/__pycache__/
+dist/
