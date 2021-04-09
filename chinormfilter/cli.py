@@ -35,7 +35,6 @@ class Filter:
             for t in self.tokenizer.tokenize(w, mode):
                 n += t.normalized_form()
             normalized.append(n)
-            print(normalized)
 
         return all([t == normalized[0] for t in normalized[1:]]) if normalized else False
 
