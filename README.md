@@ -3,6 +3,7 @@
 [![PyPi version](https://img.shields.io/pypi/v/chinormfilter.svg)](https://pypi.python.org/pypi/chinormfilter/)
 ![PyTest](https://github.com/po3rin/chinormfilter/workflows/PyTest/badge.svg)
 [![](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-390/)
+![](https://img.shields.io/pypi/l/chinormfilter)
 
 Filter synonym files written in lucene format to avoid duplication with Sudachi normalization. Mainly used when migrating to sudachi analyzer.
 
