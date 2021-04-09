@@ -27,7 +27,7 @@ class Filter:
             dict_type=dict_type, config_path=sudachi_setting).create()
 
     def duplicated(self, line: str) -> bool:
-        words = [l.strip() for l in re.split('[,=>]', line)]
+        words = [l.strip() for l in re.split(',|=>', line)]
 
         normalized = []
         for w in words:
@@ -35,8 +35,8 @@ class Filter:
             for t in self.tokenizer.tokenize(w, mode):
                 n += t.normalized_form()
             normalized.append(n)
+            print(normalized)
 
-        print(normalized)
         return all([t == normalized[0] for t in normalized[1:]]) if normalized else False
 
 

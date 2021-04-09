@@ -1,5 +1,6 @@
 # chinormfilter
 
+[![PyPi version](https://img.shields.io/pypi/v/chinormfilter.svg)](https://pypi.python.org/pypi/chinormfilter/)
 ![PyTest](https://github.com/po3rin/chinormfilter/workflows/PyTest/badge.svg)
 [![](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
@@ -15,7 +16,7 @@ filtered result is following.
 
 ```txt
 レナリドミド,レナリドマイド
-リンゴ=>林檎
+リンゴ => 林檎
 飲む,呑む
 tlc => tlc,全肺気量
 リンたんぱく質,リン蛋白質,リンタンパク質
