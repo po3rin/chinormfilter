@@ -28,3 +28,5 @@ tlc => tlc,全肺気量
 tlc => tlc,全肺気量
 ```
 
+## TODO
+- [ ] custom dict test
