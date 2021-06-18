@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chinormfilter"
-version = "0.5.0"
+version = "0.5.1"
 description = ""
 authors = ["po3rin <abctail30@gmail.com>"]
 repository = "http://github.com/po3rin/chinormfilter"
@@ -14,8 +14,8 @@ chinormfilter = "chinormfilter.cli:cli"
 [tool.poetry.dependencies]
 python = "^3.7"
 sudachipy = "^0.5.2"
-sudachidict_full = "^20201223.post1"
-sudachidict_core = "^20201223.post1"
+sudachidict_full = "^20210608"
+sudachidict_core = "^20210608"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.7"
