@@ -28,5 +28,19 @@ tlc => tlc,全肺気量
 tlc => tlc,全肺気量
 ```
 
+### Specify system dict
+
+```sh
+$ chinormfilter tests/test.txt -s full -o out.txt
+```
+
+### Use Custom Dict
+
+Specify dict via sudachi.json
+
+```sh
+$ chinormfilter tests/test.txt -s sudachi.json -o out.txt
+```
+
 ## TODO
 - [ ] custom dict test
