@@ -3,7 +3,7 @@ from chinormfilter.cli import Filter
 
 
 def test_version():
-    assert __version__ == '0.5.0'
+    assert __version__ == '0.5.3'
 
 
 def test_kuro2sudachi_cli(capsys):
