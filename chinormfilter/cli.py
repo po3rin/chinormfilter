@@ -13,21 +13,18 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument("file", help="lucene synonym file path")
 parser.add_argument("-o", "--out", help="output path")
-parser.add_argument(
-    "-r", "--sudachi_setting", help="the setting file in JSON format"
-)
-parser.add_argument(
-    "-s", "--sudachi_dict_type", help="sudachidict type"
-)
+parser.add_argument("-r", "--sudachi_setting", help="the setting file in JSON format")
+parser.add_argument("-s", "--sudachi_dict_type", help="sudachidict type")
 
 
 class Filter:
     def __init__(self, sudachi_setting=None, dict_type="core"):
         self.tokenizer = dictionary.Dictionary(
-            dict_type=dict_type, config_path=sudachi_setting).create()
+            dict_type=dict_type, config_path=sudachi_setting
+        ).create()
 
     def duplicated(self, line: str) -> bool:
-        words = [l.strip() for l in re.split(',|=>', line)]
+        words = [l.strip() for l in re.split(",|=>", line)]
 
         normalized = []
         for w in words:
@@ -36,7 +33,9 @@ class Filter:
                 n += t.normalized_form()
             normalized.append(n)
 
-        return all([t == normalized[0] for t in normalized[1:]]) if normalized else False
+        return (
+            all([t == normalized[0] for t in normalized[1:]]) if normalized else False
+        )
 
 
 def cli() -> str:
