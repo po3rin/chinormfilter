@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "chinormfilter"
-version = "0.5.1"
+version = "0.5.3"
 description = ""
 authors = ["po3rin <abctail30@gmail.com>"]
 repository = "http://github.com/po3rin/chinormfilter"
@@ -12,13 +12,17 @@ license = "Apache-2.0"
 chinormfilter = "chinormfilter.cli:cli"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-sudachipy = "^0.5.2"
-sudachidict_full = "^20210608"
-sudachidict_core = "^20210608"
+python = "^3.11"
+sudachipy = "^0.6.7"
+sudachidict-core = "^20230110"
+sudachidict-full = "^20230110"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.7"
+pytest = "^6.2.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+twine = "^4.0.2"
 
 [build-system]
 requires = ["poetry>=0.12"]
